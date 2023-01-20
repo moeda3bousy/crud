@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>CRUDS</title>
+</head>
+<body class="bg-success">
+
+    <div class="form-control container my-4 p-5 bg-dark text-light">
+    <label  class="mb-2" for="#pname">Product Name</label>
+    <input class="form-control mb-4" id="pname" type="text">
+    <label  class="mb-2" for="#pprice">Product Price</label>
+    <input  class="form-control mb-4" id="pprice" type="text">
+    <label  class="mb-2" for="#pcategory">Product Category</label>
+    <input  class="form-control mb-4" id="pcategory" type="text">
+    <label  class="mb-2" for="#pdescription">Product Description</label>
+    <input  class="form-control mb-5" id="pdescription" type="text">
+    <button id="btn" onclick="storeData()" class="btn btn-warning form-control">Add</button>
+    </div>
+    <label  class="mb-4 ms-5 mt-5 text-center container text-light fw-bold fs-3" for="#search">Search</label>
+    <input onkeyup="searchData(this.value)" id="search"  class="form-control mb-5 container w-75 fs-5" type="text">
+<table class="container table table-striped bg-light text-success rounded text-center">
+<thead>
+    <tr>
+<th>Product Number</th>  
+<th>Product Name</th>  
+<th>Product Price</th>   
+<th>Product Category</th>   
+<th>Product Description</th>   
+<th>Update</th>   
+<th>Delete</th>   
+</tr>
+</thead>
+<tbody id="tbody" class="ps-2">
+</tbody>
+</table>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="M.JS"></script>
+
+</body>
+</html>
